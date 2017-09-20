@@ -9,17 +9,21 @@ body {
 .container {
     display: flex;
     flex-direction: row;
-    max-width: 80%;
-    margin: 2% auto;
+    width: 80%;
+    margin: 5% auto;
     background-color: lightgrey;
-    justify-content: space-around;
-
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .square {
     display: inline;
-    width: 24%;
-    height: 20%;
-    border: solid 2px purple;
+    min-width: 250px;
+    min-height: 250px;
+    border: solid 2.5px purple;
+    margin: 20px;
+}
+
+@media (min-width: 400px) {
 
 }
