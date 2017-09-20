@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darkgrey;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    max-width: 80%;
+    margin: 2% auto;
+    background-color: lightgrey;
+    justify-content: space-around;
+
+}
+
+.square {
+    display: inline;
+    width: 24%;
+    height: 20%;
+    border: solid 2px purple;
+
+}
