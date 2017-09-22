@@ -3,41 +3,99 @@
 }
 
 body {
-    background-color: darkgrey;
+    background-color: lightgrey;
+    font-family: 'Bungee Inline', cursive;
+    color: dimgray;
+    text-align: center;
 }
 
-h3 {
+.header p {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: black;
+}
+
+.header p a {
+    text-decoration: none;
+    color: black;
+}
+
+.header p a:hover {
+    color: hotpink;
+}
+
+h1 {
+    font-family: 'Bungee Shade', cursive;
+    margin-bottom: 50px;
+    color: black;
+}
+
+h2 {
     text-align: center;
-    font-family: sans-serif;
-    font-size: 2em;
 }
 
 .container {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    max-width: 300px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.grid {
     display: flex;
     flex-direction: row;
-    width: 80%;
-    margin: 5% auto;
-    background-color: lightgrey;
-    justify-content: center;
     flex-wrap: wrap;
+    width: 1080px;
+    align-items: center;
+
+
 }
 
 .square {
     display: inline;
     min-width: 250px;
     min-height: 250px;
-    border: solid 5px white;
-    margin: 20px;
     box-shadow: 5px 5px 10px darkgrey;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 10px;
 }
 
-/*
-Colour Swap
-Fading from one color to another using an infinite animation
-*/
+@media (min-width: 600px) {
+    .container {
+        max-width: 580px;
+    }
+    h1 {
+        font-size: 80px;
+    }
+}
+
+@media (min-width: 900px) {
+    .container {
+        max-width: 850px;
+    }
+    h1 {
+        font-size: 80px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1120px;
+    }
+    h1 {
+        font-size: 80px;
+    }
+}
+
+
+
+/* COLOUR SWAP */
 
 .color-fade {
     background-color: red;
@@ -53,10 +111,7 @@ Fading from one color to another using an infinite animation
     100% 0% {background-color: red; color: purple;}
 }
 
-/*
-Rainbow Text
-Cycling through different text colors infinitely
-*/
+/* RAINBOW TEXT */
 
 .rainbow-text {
     background-color: black;
