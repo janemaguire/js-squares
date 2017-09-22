@@ -51,8 +51,6 @@ h2 {
     flex-wrap: wrap;
     width: 1080px;
     align-items: center;
-
-
 }
 
 .square {
@@ -91,47 +89,4 @@ h2 {
     h1 {
         font-size: 80px;
     }
-}
-
-
-
-/* COLOUR SWAP */
-
-.color-fade {
-    background-color: red;
-    color: purple;
-    animation-name: fade;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes fade {
-    0% {background-color: red; color: purple;}
-    50% {background-color: purple; color: red;}
-    100% 0% {background-color: red; color: purple;}
-}
-
-/* RAINBOW TEXT */
-
-.rainbow-text {
-    background-color: black;
-    color: red;
-    animation-name: rainbow;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-
-@keyframes rainbow {
-    14% {color: orange;}
-    28% {color: yellow;}
-    42% {color: green;}
-    56% {color: blue;}
-    70% {color: indigo;}
-    84% {color: violet;}
-    100% {color: red;}
-}
-
-@media (min-width: 400px) {
-
 }

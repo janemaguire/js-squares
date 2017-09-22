@@ -1,0 +1,60 @@
+/* COLOUR SWAP */
+
+.color-fade {
+    background-color: red;
+    color: purple;
+    animation-name: fade;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fade {
+    0% {background-color: red; color: purple;}
+    50% {background-color: purple; color: red;}
+    100% 0% {background-color: red; color: purple;}
+}
+
+/* RAINBOW TEXT */
+
+.rainbow-text {
+    background-color: black;
+    color: red;
+    animation-name: rainbow;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rainbow {
+    14% {color: orange;}
+    28% {color: yellow;}
+    42% {color: green;}
+    56% {color: blue;}
+    70% {color: indigo;}
+    84% {color: violet;}
+    100% {color: red;}
+}
+
+/* ROTATE */
+
+.rotate {
+    background-color: skyblue;
+}
+
+.rotate h2 {
+    color: pink;
+    font-size: 30px;
+    padding: 10px;
+    border: 5px solid pink;
+    animation-name: rotate;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(90deg);}
+    50% {transform: rotate(180deg);}
+    75% {transform: rotate(270deg);}
+    100% {transform: rotate(360deg);}
+}
