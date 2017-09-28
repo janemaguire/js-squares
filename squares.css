@@ -1,7 +1,7 @@
 /* COLOUR SWAP */
 
 .color-fade {
-    background-color: red;
+    background-color: mediumvioletred;
     color: purple;
     animation-name: fade;
     animation-duration: 5s;
@@ -9,15 +9,16 @@
 }
 
 @keyframes fade {
-    0% {background-color: red; color: purple;}
-    50% {background-color: purple; color: red;}
-    100% 0% {background-color: red; color: purple;}
+    0% {background-color: mediumvioletred; color: purple;}
+    50% {background-color: purple; color: mediumvioletred;}
+    100% 0% {background-color: mediumvioletred; color: purple;}
 }
 
 /* RAINBOW TEXT */
 
 .rainbow-text {
-    background-color: black;
+    font-size: 1.5em;
+    background-color: linen;
     color: red;
     animation-name: rainbow;
     animation-duration: 7s;
@@ -57,4 +58,35 @@
     50% {transform: rotate(180deg);}
     75% {transform: rotate(270deg);}
     100% {transform: rotate(360deg);}
+}
+
+/* FIRST LINE */
+
+.firstline {
+    max-width: 250px;
+    max-height: 250px;
+    background-color: lightsalmon;
+    text-align: left;
+    padding: 10px;
+    color: lightyellow;
+    display: flex;
+    justify-content: flex-start;
+    font-family: monospace;
+    font-size: 1.2em;
+}
+
+.firstline p::first-line {
+    font-family: 'Bungee Inline', cursive;
+    font-size: 1.2em;
+    color: lightgrey;
+}
+
+.firstline p::first-letter {
+    font-family: 'Bungee Inline', cursive;
+    background-color: lightgrey;
+    color: lightsalmon;
+    font-size: 4em;
+    padding: 10px;
+    margin-right: 5px;
+    float: left;
 }
