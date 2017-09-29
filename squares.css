@@ -90,3 +90,35 @@
     margin-right: 5px;
     float: left;
 }
+
+/* NTH CHILD */
+.children {
+    max-width: 250px;
+    max-height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: lightgreen;
+}
+
+.children .col {
+    display: flex;
+    flex-direction: column;
+}
+
+.children .col p {
+    color: honeydew;
+    font-family: monospace;
+}
+
+.first p:nth-last-child(1n + 4) {
+    color: grey;
+}
+
+.second p:nth-child(2n+1) {
+    color: hotpink;
+}
+
+.third p:nth-last-child(1) {
+    color: coral;
+}
