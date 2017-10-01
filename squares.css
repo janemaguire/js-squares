@@ -141,3 +141,18 @@
   padding: 20px;
   border-radius: 50%;
 }
+
+.popcircles {
+
+}
+
+.pop {
+  background-color: #da5723;
+  border: 20px solid #da5723;
+  border-radius: 50%;
+  transition:0s 180s;
+}
+.pop:hover {
+  opacity:0;
+  transition:0s;
+}
