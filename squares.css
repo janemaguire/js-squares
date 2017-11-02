@@ -342,3 +342,17 @@
         transform: rotate(360deg);
     }
 }
+
+/*RADIOHEAD FADE*/
+
+.radiohead img {
+    animation: radiohead 15s ease-out infinite alternate;
+    height: 250px;
+    width: 250px;
+    object-fit: contain;
+}
+
+@keyframes radiohead {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
