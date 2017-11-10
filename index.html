@@ -4,8 +4,8 @@
         <meta charset="utf-8">
         <title>JS Squares</title>
         <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Bungee+Shade" rel="stylesheet">
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="squares.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/input-scramble.css">
     </head>
     <body>
         <div class="header">
@@ -16,8 +16,11 @@
         </div>
         <div class="container">
             <div class="grid">
-                  <div class="square">
-                      next square
+                  <div class="input-scramble square">
+                      <p class="highlight">Type your name</p>
+                      <input type="text" name="wrong-letters" id="wrong-letters" value="" maxlength="12">
+                      <button type="submit" name="button" id="scramble-button">Scramble</button>
+                      <div id="new-name"></div>
                   </div>
                   <div class="square">
                       next square
@@ -54,5 +57,6 @@
                   </div>
               </div>
         </div>
+        <script src="js/scrambleInput.js" charset="utf-8"></script>
     </body>
 </html>

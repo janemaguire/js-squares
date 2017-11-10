@@ -4,9 +4,13 @@
 
 body {
     background-color: lightgrey;
-    font-family: 'Bungee Inline', cursive;
+    font-family: monospace;
     color: dimgray;
     text-align: center;
+}
+
+body .highlight {
+    font-family: 'Bungee Inline', cursive;
 }
 
 .header p {
@@ -25,14 +29,10 @@ body {
     color: hotpink;
 }
 
-h1 {
+body h1 {
     font-family: 'Bungee Shade', cursive;
     margin-bottom: 50px;
     color: black;
-}
-
-h2 {
-    text-align: center;
 }
 
 .container {

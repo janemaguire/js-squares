@@ -1,0 +1,51 @@
+.input-scramble {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    color: white;
+    background-color: teal;
+    padding: 30px;
+    max-width: 250px;
+    max-height: 250px;
+}
+
+.input-scramble input {
+    border: none;
+    height: 30px;
+    color: teal;
+    font-family: monospace;
+    text-align: center;
+    font-size: 12px;
+}
+
+.input-scramble input:focus {
+    outline: none;
+    box-shadow: 0 0 10px white;
+}
+
+.input-scramble button {
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    color: teal;
+    font-family: 'Bungee Inline', cursive;
+    height: 30px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    max-width: 100px;
+    align-self: center;
+}
+
+.input-scramble button:focus {
+    outline: none;
+}
+
+.input-scramble button:active {
+    box-shadow: 0 0 10px white;
+}
+
+.input-scramble #new-name {
+    font-size: 16px;
+}
